@@ -1,6 +1,6 @@
 # NBT Storage
 
-Each namespace has exactly 7 NBT storage locations designated to it, each with it's own purpose:
+Each namespace has exactly seven NBT storage locations designated to it, each with it's own purpose:
 
 > * `<namespace>:data`
 > * `<namespace>:var`
@@ -45,7 +45,7 @@ It is encouraged to use this location whenever applicable.
 
 ## Specialized Operations
 
-The other 5 locations are for specialized uses, and will be explained more in-depth on their own pages, but in brief summary:
+The other five storage locations are for specialized uses, and are explained more in-depth on their own pages, but in brief summary:
 
 * `in`: For setting API function inputs.
 * `out`: For reading API function outputs.

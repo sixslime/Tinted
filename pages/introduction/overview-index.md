@@ -1,5 +1,5 @@
 ---
-description: A summary of what Tinted is, as a brief but complete index.
+description: An overview of Tinted in the form of a brief but complete index.
 layout:
   title:
     visible: true

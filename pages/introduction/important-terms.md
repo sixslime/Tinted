@@ -1,6 +1,10 @@
-# Important Terminology
+---
+description: >-
+  Words that are used throughout the specification that should be known before
+  proceeding.
+---
 
-There are a few terms' meanings that should be made crystal clear before proceeding.
+# Important Terms
 
 ***
 
@@ -21,7 +25,7 @@ The word "namespace" may be used to refer to a namespace itself, but also may be
 
 ## Public/Private
 
-The words **public** and **private** have a very specific meaning in this specification:
+**Public** and **private** have very specific meanings when used in this specification:
 
 **Public:** Accessible and usable by all namespaces.
 
