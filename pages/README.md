@@ -55,8 +55,8 @@ Tinted is **NOT** a "Theory of Everything" framework that handles all responsibi
 To illustrate this point, here are a few things that the Tinted specification does <mark style="color:red;">**NOT**</mark> do:
 
 * Enforce any code-style rules.
-* Ensure that the **content** of each datapack "works" with every others'.\
-  _<mark style="color:blue;">Tinted only ensures that datapacks will not</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**directly interfere**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">with each other, not necessarily that their content will, in the practical sense, "work correctly" with every others'.</mark>_
+* Ensure that the **features** of each datapack "works" with every others'.\
+  _<mark style="color:blue;">Tinted only ensures that datapacks will not</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**directly interfere**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">with each other, not necessarily that their features will, in the practical sense, "work correctly" with every others'.</mark>_
 * Function as a package manager specification.
 * Generate datapacks that are strictly incompatible with non-Tinted datapacks.
 * Require any external program to be useful.

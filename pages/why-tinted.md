@@ -21,6 +21,10 @@ If you have any disagreements or problems with Tinted, please, don't hesitate to
 
 ***
 
+{% hint style="info" %}
+If you are ultimately **not** inclined to use Tinted, let me know why in the [**feedback form**](have-feedback.md)!
+{% endhint %}
+
 ### Regarding:
 
 <details>
@@ -42,7 +46,3 @@ This project has some absolutely great ideas that could be implemented alongside
 </details>
 
 ***
-
-{% hint style="info" %}
-If you are ultimately **not** inclined to use Tinted, let me know why in the [**feedback form**](have-feedback.md)!
-{% endhint %}
