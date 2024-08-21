@@ -29,8 +29,8 @@ The word "namespace" may be used to refer to a namespace itself, but also may be
 
 **Public:** Accessible and usable by all namespaces.
 
-**Private:** Accessible only to the defining namespace.\
-_Non-existent to other namespaces._
+**Private:** Accessible only by the same namespace.\
+_Treated as non-existent to other namespaces._
 
 ***
 

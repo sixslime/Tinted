@@ -6,7 +6,7 @@
 * [Data Safety/Organization](data-safety-organization/README.md)
   * [NBT Storage](data-safety-organization/nbt-storage.md)
 * [File Structure](file-structure/README.md)
-  * [Namespaces (Q)](file-structure/namespaces-q.md)
+  * [Namespaces](file-structure/namespaces.md)
 * [File Visibility](file-visibility.md)
 * [Why Tinted?](why-tinted.md)
 * [Have Feedback?](have-feedback.md)
