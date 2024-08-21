@@ -7,10 +7,15 @@
 ```
 <datapack>
 ├── data
+│   ├── load
 │   ├── <primary namespace>
-│   └── <secondary namespace...>
+│   └── <linked namespace...>
 └── <...>
 ```
+
+{% hint style="info" %}
+<mark style="color:blue;">See Datapack Loading for information on the 'load' namespace.</mark>
+{% endhint %}
 
 ### The Primary Namespace
 
@@ -28,11 +33,7 @@ Linked namespaces are included in a datapack in order to override files or other
 
 Datapacks must only override or interact with the **public** content of any included namespace.
 
-A datapack **must not** define any new files in linked namespaces.
-
-{% hint style="info" %}
-_<mark style="color:blue;">**Private**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">content outside of a datapack's primary namespace must be treated as non-existent to that datapack.</mark>_
-{% endhint %}
+A datapack **must not** define any new files or interact with **private** files in linked namespaces.
 
 ***
 
@@ -44,9 +45,9 @@ _<mark style="color:blue;">**Private**</mark> <mark style="color:blue;"></mark><
 │   ├── load
 │   │   └── tags
 │   │       └── function
-│   │           ├── load.mcfunction
-│   │           ├── post_load.mcfunction
-│   │           └── pre_load.mcfunction
+│   │           ├── load.json
+│   │           ├── post_load.json
+│   │           └── pre_load.json
 │   ├── <primary namespace>
 │   │   ├── function
 │   │   │   ├── api
@@ -57,7 +58,8 @@ _<mark style="color:blue;">**Private**</mark> <mark style="color:blue;"></mark><
 │   │   │   │   ├── <load function>
 │   │   │   │   └── (private functions)
 │   │   │   ├── settings.mcfunction
-│   │   │   └── uninstall.mcfunction
+│   │   │   ├── uninstall.mcfunction
+│   │   │   └── objects.mcspec
 │   │   ├── tags
 │   │   │   ├── function
 │   │   │   │   ├── hook
@@ -69,11 +71,10 @@ _<mark style="color:blue;">**Private**</mark> <mark style="color:blue;"></mark><
 │   │   │   ├── load.json
 │   │   │   ├── post_load.json
 │   │   │   └── pre_load.json
-│   │   ├── <registry...>
-│   │   │   ├── (public files)
-│   │   │   └── _
-│   │   │       └── (private files)
-│   │   └── objects.mcfo
+│   │   └── <registry...>
+│   │       ├── (public files)
+│   │       └── _
+│   │           └── (private files)
 │   └── <secondary namespace>
 └── pack.mcmeta
 ```

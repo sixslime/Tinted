@@ -4,11 +4,12 @@
 <datapack>
 ├── data
 │   ├── <primary namespace>
-│   └── <secondary namespace...>
-└── <...>
+│   ├── (linked namespaces...)
+│   └── (...)
+└── (...)
 ```
 
-***
+URC,&#x20;
 
 ## The Primary Namespace
 
@@ -26,7 +27,32 @@ Linked namespaces are included in a datapack in order to override files or other
 
 Datapacks must only override or interact with the **public** content of any included namespace.
 
-A datapack **must not** define any new files in linked namespaces.
+A datapack **must not** define any new files or interact with **private** files in linked namespaces.
+
+***
+
+## The Entry-point
+
+Often in the wild,&#x20;
+
+```
+<datapack>
+├── data
+│   ├── load
+│   │   └── tags
+│   │       └── function
+│   │           ├── load.json
+│   │           ├── post_load.json
+│   │           └── pre_load.json
+│   ├── <primary namespace>
+│   │   └── tags
+│   │       └── function
+│   │           ├── load.json
+│   │           ├── post_load.json
+│   │           └── pre_load.json
+│   └── <linked namespace...>
+└── <...>
+```
 
 [^1]: Content is <mark style="color:blue;">defined</mark> by a datapack if it does not already exist within the world's filesystem.&#x20;
 
