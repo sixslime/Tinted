@@ -2,13 +2,31 @@
 
 ## Namespaces
 
-Most datapacks in the wild already have a "main" namespace that conveniently contains the bulk of their content; This same concept applies to what Tinted calls a **primary namespace**.
+```
+<datapack>
+├── data
+│   ├── <primary namespace>
+│   └── <secondary namespace...>
+└── <...>
+```
 
-Each datapack must define exactly one **primary namespace**, and any files that a datapack newly introduces _(files that would not exist if the datapack was not in the world)_ must be contained within this namespace.
+### The Primary Namespace
 
-A datapack can still include as many other namespaces as it needs--**secondary namespaces--**but a datapack must not define any new files within secondary namespaces, only replace.
+A datapack must define exactly one **primary namespace**.
 
+The datapack must only define new files/content within it's primary namespace.
 
+The name of this namespace is the datapack's identifier; resource locations, scoreboard objectives, storage locations, etc. that the datapack defines are pre-fixed by this identifier.
+
+### Linked Namespaces
+
+A datapack may include any number of **linked namespaces**.
+
+The datapack may interact with linked namespaces by including **public** files that are defined within those namespaces.
+
+The datapack **must not** define any new files/contents or interact with any **private** files within its linked namespaces.
+
+***
 
 ```
 <datapack>
